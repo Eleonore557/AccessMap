@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TouchableOpacity, Image, Button} from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
 
 export default function WelcomePage({navigation}) {
   return (
@@ -12,7 +12,7 @@ export default function WelcomePage({navigation}) {
         <Image source={require('../google.png')} style={styles.imgGoogle}/>
         <Text style={styles.txtGoogleContinue}>Continuer avec Google</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.btnEmailContinue} onPress={() => navigation.push('Register')}>
+      <TouchableOpacity style={styles.btnEmailContinue} onPress={() => navigation.push('Login')}>
         <Image source={require('../at.png')} style={styles.imgGoogle}/>
         <Text style={styles.txtEmailContinue}>Continuer avec Email</Text>
       </TouchableOpacity>
