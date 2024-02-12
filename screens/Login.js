@@ -9,7 +9,7 @@ export default function Login() {
       <Text style={styles.connect}>Se connecter</Text>
       <Text style={styles.connectYou}>Connectez-vous maintenant pour{"\n"}accéder votre profil !</Text>
       <View>
-        <Text aria-label="Votre Email" style={styles.label}>Votre Email</Text>
+        <Text aria-label="Email" style={styles.label}>Email</Text>
         <Image source={require('../arobase.png')} style={styles.imgInput}/>
         <TextInput
           style={styles.formInput}
@@ -20,7 +20,7 @@ export default function Login() {
         />
       </View>
       <View>
-        <Text aria-label="Votre Email" style={styles.emailLabel}>Votre Mot de Passe</Text>
+        <Text aria-label="Votre Email" style={styles.emailLabel}>Mot de Passe</Text>
         <Image source={require('../cadenas.png')} style={styles.imgInput}/>
         <TextInput 
           style={styles.formInput}

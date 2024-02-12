@@ -10,7 +10,7 @@ export default function WelcomePage({navigation}) {
       <Text style={styles.demarrer}>Démarrer...</Text>
       <TouchableOpacity style={styles.btnGoogleContinue}>
         <Image source={require('../google.png')} style={styles.imgGoogle}/>
-        <Text style={styles.txtGoogleContinue}>Continuer avec Google</Text>
+        <Text style={styles.txtGoogleContinue} onPress={() => navigation.navigate("LaunchPage")}>Continuer avec Google</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.btnEmailContinue} onPress={() => navigation.push('Login')}>
         <Image source={require('../at.png')} style={styles.imgGoogle}/>
