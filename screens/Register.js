@@ -118,28 +118,6 @@ const styles = StyleSheet.create({
     top: 60,
     left: 29,
   },
-  btnGoogleContinue: {
-    borderRadius: 10,
-    borderColor: 'black',
-    borderWidth: 2,
-    width: 340,
-    height: 50,
-    marginBottom: 35,
-  },
-  imgGoogle: {
-    height: 20,
-    width: 20,
-    position: 'absolute',
-    left: 60,
-    bottom: 15,
-  },
-  txtGoogleContinue: {
-    textAlign: 'center',
-    fontWeight: 'bold',
-    position: 'absolute',
-    bottom: 15,
-    left: 95
-  },
   flexRow: {
     flexDirection: 'row',
   }, 
@@ -164,12 +142,6 @@ const styles = StyleSheet.create({
     marginLeft: 18,
     position: 'absolute',
     top : 56
-  },
-  forgot: {
-    color: '#575DFB',
-    textDecorationLine: 'underline',
-    marginRight: 'auto',
-    marginLeft: 18
   },
   imgInput:{
     position: 'absolute',
