@@ -4,7 +4,7 @@ import React, {useState, useRef} from 'react'
 import {Picker} from '@react-native-picker/picker';
 
 
-export default function WarnAccessible() {
+export default function WarnNoAccessible() {
 
   const [selectedLanguage, setSelectedLanguage] = useState();
   const pickerRef = useRef();
@@ -20,8 +20,8 @@ pickerRef.current.blur();
     <View style={styles.container}>
       <StatusBar style="auto" />
       <ScrollView>
-        <Text style={styles.connect}>Avertir Accessible</Text>
-        <Text style={styles.connectYou}>Avertir un élément qui vous semble accessible ! :)</Text>
+        <Text style={styles.connect}>Avertir Non Accessible</Text>
+        <Text style={styles.connectYou}>Avertir un élément qui vous semble pas accessible ! :(</Text>
         <Text style={styles.titleMap}>Université Paris 8 Vincennes - Saint-Denis</Text>
         <View style={styles.viewNom}>
             <Text aria-label="Nom" style={styles.label}>Titre</Text>

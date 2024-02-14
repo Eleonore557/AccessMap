@@ -6,14 +6,17 @@ import LaunchPage from '../LaunchPage';
 import VerificationCode from '../VerificationCode';
 import ForgotPassword from '../ForgotPassword';
 import NewPassword from '../NewPassword';
-import WarnAccessible from '../WarnAccessible';
+import WarnConfirmed from '../WarnConfirmed';
+import AnnounceDevelop from '../AnnounceDevelop';
 
 const Stack = createNativeStackNavigator();
 
 export default function StackNavigator() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name='WarnAccessible' component={WarnAccessible} />
+      <Stack.Screen name='AnnounceDevelop' component={AnnounceDevelop} />
+      <Stack.Screen name='WarnConfirmed' component={WarnConfirmed} />
+      <Stack.Screen name='WelcomePage' component={WelcomePage} />
       <Stack.Screen name='ForgotPassword' component={ForgotPassword} />
       <Stack.Screen name="Bienvenue" component={WelcomePage} />
       <Stack.Screen name='Login' component={Login} />
