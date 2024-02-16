@@ -20,7 +20,7 @@ export default function Login() {
         />
       </View>
       <View>
-        <Text aria-label="Votre Email" style={styles.emailLabel}>Mot de Passe</Text>
+        <Text aria-label="Mot de passe" style={styles.emailLabel}>Mot de Passe</Text>
         <Image source={require('../cadenas.png')} style={styles.imgInput}/>
         <TextInput 
           style={styles.formInput}

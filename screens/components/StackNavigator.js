@@ -9,12 +9,14 @@ import NewPassword from '../NewPassword';
 import WarnConfirmed from '../WarnConfirmed';
 import AnnounceDevelop from '../AnnounceDevelop';
 import AdminDashboard from '../AdminDashboard';
+import AdminLogin from '../AdminLogin';
 
 const Stack = createNativeStackNavigator();
 
 export default function StackNavigator() {
   return (
     <Stack.Navigator>
+      <Stack.Screen name="AdminLogin" component={AdminLogin}/>
       <Stack.Screen name='AdminDashboard' component={AdminDashboard} />
       <Stack.Screen name='WelcomePage' component={WelcomePage} />
       <Stack.Screen name='AnnounceDevelop' component={AnnounceDevelop} />
